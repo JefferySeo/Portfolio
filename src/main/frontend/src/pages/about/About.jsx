@@ -16,6 +16,7 @@ const About = () => {
                         <div className="intro">
                             <p><FaAngleRight/>Name : 서택상</p>
                             <p><FaAngleRight/>Eng_name : Jeffery Seo</p>
+                            <p><FaAngleRight/>Birth : 1994.07.25</p>
                         </div>
                         <div className="contour3" />
                         <h1>개발지식과 더불어<br/> 다양한 경험들을 활용하는<br/>창의적인 개발자가<br/>되겠습니다!</h1>
@@ -44,7 +45,7 @@ const About = () => {
                         <p className="career_content">가톨릭대학교 성심교정 정보통신전자공학부 <span className='date'>2013.03 ~ 2020.02</span></p>
                         <p className="career_content">풍무고등학교 <span className='date'>2010.03~2013.02</span></p>
                         <h2 className='mt-4 mb-2'>Career</h2>
-                        <p className="career_content">(주)빅터시스템 경호사업부 <span className="date">2017.06~2023.01</span></p>
+                        <p className="career_content">(주)빅터시스템 경호사업부 팀장 <span className="date">2017.06~2023.01</span></p>
                         <p className="career_content">고등직업교육거점지구(HiVE)사업 Local Innovation Project <span className="date">2022.12~2023.01</span></p>
                         <p className="career_content">부울경 전문대학 혁신지원사업 발전 협의회(ICK 부울경) 공동 프로그램 <span className="date">2019.06~2021.12</span></p>
                         <p className="career_content">세계적 수준의 전문대학 (WCC : World Class Colleage) GET 올레 프로젝트 <span className="date">2018.12~2019.12</span></p>

@@ -1,7 +1,9 @@
 import React from 'react';
 import { Nav, Navbar, Container, NavDropdown } from 'react-bootstrap';
+import work from '../data/work';
 
 const Navigation = () => {
+    
     return (
         <Navbar expand="lg" >
             <Container>
@@ -11,10 +13,11 @@ const Navigation = () => {
                     <Nav className="ms-auto text-end">
                         <Nav.Link href="/about">About</Nav.Link>
                         <NavDropdown title='Portfolio' id="show_portfolio">
-                            <NavDropdown.Item href="/portfolio/1">11</NavDropdown.Item>
-                            <NavDropdown.Item href="/portfolio/2">22</NavDropdown.Item>
-                            <NavDropdown.Item href="/portfolio/3">33</NavDropdown.Item>
-                            <NavDropdown.Item href="/portfolio/4">44</NavDropdown.Item>
+                            {work.portfolio.map((dt, index) => {
+                                let url = "/portfolio/" + dt.id;
+                                return <NavDropdown.Item className='text-end' href={url} key={index}>{dt.main_title}</NavDropdown.Item>
+                            })}
+                            
                         </NavDropdown>
                         <Nav.Link href="/contact">Contact</Nav.Link>
                         <Nav.Link target={'_blank'} href="https://github.com/JefferySeo">Github</Nav.Link>

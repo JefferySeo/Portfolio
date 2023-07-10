@@ -21,6 +21,7 @@ header{
     position:sticky;
     top:0;
     background-color: rgba(255,255,255,0.6);
+    backdrop-filter: blur(5px);
     height:80px;
     padding-top:10px;
     border-bottom:1px solid #333;
@@ -59,9 +60,10 @@ header nav a{
 .navbar-toggler.collapsed{
     border:2px solid #444;
 }
-@media (max-width:576px) {
+@media (max-width:992px) {
     .navbar-nav{
         background-color: rgba(255,255,255,0.6);
+        backdrop-filter: blur(5px);
         margin-top:18px;
     }
     header.move .navbar-nav{
